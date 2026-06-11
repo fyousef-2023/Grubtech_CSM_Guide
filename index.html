@@ -599,42 +599,71 @@ body {
 
 
  
-    <p class="sec-title">صفحة ٢ — المنيو</p>
+ <p class="sec-title">صفحة ٢ — المنيو</p>
+    <div class="card">
+      <div class="card-body">
+        <div class="alert info" style="margin-bottom:14px">
+          الأعمدة الخضراء = معلومات رواء | الأعمدة الزرقاء = معلومات التطبيقات. 
+        </div>
+        <table class="file-table">
+          <thead><tr><th>#</th><th>العمود</th><th>الإلزامية</th><th>ملاحظة</th></tr></thead>
+          <tbody>
+            <tr><td>١</td><td>اسم الصنف بالعربي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
+            <tr><td>٢</td><td>اسم الصنف بالإنجليزي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
+            <tr><td>٣</td><td>الفئة بالعربي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
+            <tr><td>٤</td><td>الفئة بالإنجليزي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
+            <tr><td>٥</td><td>سعر بيع رواء</td><td><span class="req-tag req">إلزامي</span></td><td>عميل جديد: يعبّئه بنفسه — عميل سابق: موجود في الملف من Products Onboarding</td></tr>
+            <tr><td>٦</td><td>صور المنتج — رابط Drive</td><td><span class="req-tag req">إلزامي</span></td><td>العميل يرفع الصور على Drive ويضع الرابط بالملف</td></tr>
+            <tr><td>٧</td><td>وصف المنتج بالعربي</td><td><span class="req-tag opt">اختياري</span></td><td>—</td></tr>
+            <tr><td>٨</td><td>وصف المنتج بالإنجليزي</td><td><span class="req-tag opt">اختياري</span></td><td>—</td></tr>
+            <tr><td>٩</td><td>السعرات الحرارية</td><td><span class="req-tag opt">HungerStation فقط</span></td><td>إلزامي إذا مشترك في HungerStation</td></tr>
+            <tr><td>١٠</td><td>سعر بيع HungerStation</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td><td rowspan="9">العميل يقدر يحدد سعر لكل تطبيق — التطبيقات غير المشترك فيها تُترك فارغة</td></tr>
+            <tr><td>١١</td><td>سعر بيع Jahez</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٢</td><td>سعر بيع Keeta</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٣</td><td>سعر بيع Ninja</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٤</td><td>سعر بيع The Chefz</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٥</td><td>سعر بيع Mrsool</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٦</td><td>سعر بيع Noon Food</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٧</td><td>سعر بيع ToYou</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+            <tr><td>١٨</td><td>سعر بيع MR Mandoob</td><td><span class="req-tag req">إلزامي إذا مشترك</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="sec-title">صفحة ٣ — الإضافات (Add-ons)</p>
+    <div class="alert info" style="margin-bottom:14px">
+اذا عنده اضافات يحتاج يضيف هذه المعلومات        </div>
     <div class="card">
       <div class="card-body">
         <table class="file-table">
           <thead><tr><th>الحقل</th><th>الإلزامية</th><th>ملاحظة</th></tr></thead>
           <tbody>
-            <tr><td>اسم الصنف بالعربي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
-            <tr><td>اسم الصنف بالإنجليزي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
-            <tr><td>الفئة بالعربي والإنجليزي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
-            <tr><td>سعر بيع رواء</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
-            <tr><td>صور المنتج (رابط Drive)</td><td><span class="req-tag req">إلزامي</span></td><td>شرط لا يُتجاوز — بدون صور لا يُقبل الملف</td></tr>
-            <tr><td>سعر بيع كل تطبيق</td><td><span class="req-tag req">إلزامي</span></td><td>العميل يقدر يحدد سعر لكل تطبيق </td></tr>
-            <tr><td>السعرات الحرارية</td><td><span class="req-tag opt">HungerStation فقط</span></td><td>إلزامي لـ HungerStation — اختياري لباقي التطبيقات</td></tr>
-            <tr><td>وصف المنتج عربي/إنجليزي</td><td><span class="req-tag opt">اختياري</span></td><td>—</td></tr>
+            <tr><td>اسم الصنف بالعربي والإنجليزي</td><td><span class="req-tag req">إلزامي</span></td><td>يجب مطابقة الاسم الموجود في صفحة المنيو</td></tr>
+            <tr><td>الخيارات بالعربي والإنجليزي</td><td><span class="req-tag req">إلزامي</span></td><td>—</td></tr>
+            <tr><td>سعر الخيار</td><td><span class="req-tag req">إلزامي</span></td><td>إذا كل تطبيق سعره مختلف — أضف عمود منفصل لكل تطبيق</td></tr>
+            <tr><td>السعرات الحرارية</td><td><span class="req-tag opt">اختياري</span></td><td>—</td></tr>
           </tbody>
         </table>
       </div>
-    </div>
- 
-    <p class="sec-title">صفحة ٣ — الإضافات (Add-ons)</p>
-    <div class="card">
-      <div class="card-body">
-        <table class="file-table">
-          <thead><tr><th>الحقل</th><th>الإلزامية</th></tr></thead>
-          <tbody>
-            <tr><td>اسم الصنف بالعربي والإنجليزي</td><td><span class="req-tag req">إلزامي</span></td></tr>
-            <tr><td>الخيارات بالعربي والإنجليزي</td><td><span class="req-tag req">إلزامي</span></td></tr>
-            <tr><td>سعر الخيار</td><td><span class="req-tag req">إلزامي</span></td></tr>
-            <tr><td>السعرات الحرارية</td><td><span class="req-tag opt">اختياري</span></td></tr>
-          </tbody>
-        </table>
         <div class="alert warn" style="margin-top:12px; margin-bottom:0">
           إذا كل تطبيق عنده سعر مختلف للإضافة — أضف عمود منفصل لكل تطبيق بنفس طريقة صفحة المنيو.
         </div>
+    </div>
+
+    <p class="sec-title">ملاحظات مهمة</p>
+    <div class="card">
+      <div class="card-body">
+        <div class="info-row"><span class="info-label">البدء في رواء والربط خطوتان منفصلتان</span><span class="info-val badge-teal step-badge">مهم</span></div>
+        <div class="info-row"><span class="info-label">يقدر يبدأ في رواء بتعبئة الأعمدة الخضراء فقط</span><span class="info-val badge-green step-badge">مرونة</span></div>
+        <div class="info-row"><span class="info-label">عند تعبئة الأعمدة الزرقاء لاحقاً — يعيد إرسال الملف</span><span class="info-val badge-purple step-badge">تذكير</span></div>
+        <div class="info-row"><span class="info-label">التطبيقات غير المشترك فيها — تُترك فارغة</span><span class="info-val badge-amber step-badge">تنبيه</span></div>
+        <div class="info-row"><span class="info-label">الملف غير مكتمل = Products Onboarding لا يرفع التيكت</span><span class="info-val badge-red step-badge">إلزامي</span></div>
       </div>
     </div>
+
+  </div>
+
  
     <p class="sec-title">نقطة تحقق مهمة — قبل التسليم</p>
     <div class="card">
